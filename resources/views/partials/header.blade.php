@@ -38,7 +38,7 @@
                         <a href="#">news</a>
                     </li>
                     <li>
-                        <a href="#">shop <i class="fa-solid fa-caret-down"></i></a>
+                        <a href="{{route('homepage')}}">shop <i class="fa-solid fa-caret-down"></i></a>
                     </li>
                 </ul>
             </nav>
