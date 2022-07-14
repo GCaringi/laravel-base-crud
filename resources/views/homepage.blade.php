@@ -12,7 +12,14 @@
                 Current series
             </div>
             <div class="grid grid-cols-6 gap-8 py-16">
-               
+                @foreach ($comics as $index => $comic)
+                <div class= "text-center uppercase">
+                    <a href="#">
+                        <img src="{{$comic['thumb']}}" alt="">
+                        <h4 class="text-white font-bold">{{$comic['series']}}</h4> 
+                    </a>
+                </div>
+                @endforeach
             </div>
             <div class="text-center ">
                 <button class="text-white uppercase font-semibold bg-[color:var(--clr-primary)] px-12 py-2">load more</button>
