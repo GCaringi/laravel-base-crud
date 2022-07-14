@@ -1,0 +1,43 @@
+@import url(https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap);/*------------------
+        RESET
+------------------*/
+*, *::before, *::after {
+  margin: 0rem;
+  padding: 0rem;
+  box-sizing: border-box;
+}
+
+:root {
+  /*--------------
+      COLORS   
+  ---------------*/
+  --clr-base-light: #ffffff;
+  --clr-base-dark: #000000;
+  --clr-primary: #0282F9;
+  --clr-secondary: #1C1C1C;
+  --clr-tertiary: #303030;
+  --clr-socialLinks: #797979;
+  /*    Layout element size    */
+  --container: 80rem;
+  --container-small: 67.5rem;
+  --header-height: 9.375rem;
+  --jumbo-height: 25rem;
+  --comic-bar: 5rem;
+  --topFooter-height: 9.375rem;
+  --middleFooter-height: 25rem;
+  /*    Graphics element size    */
+  --active-element-height: .3125rem;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+}
+
+.o-jumbo {
+  background-image: url(../img/jumbotron.jpg);
+}
+
+.o-topFooter {
+  background-image: url(../img/footer-bg.jpg);
+}
