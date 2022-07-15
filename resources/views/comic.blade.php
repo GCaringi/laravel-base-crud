@@ -37,62 +37,6 @@
                 </div>
             </div>
         </div>
-        <div class = "bg-[#F6F6F6] pt-12 pb-24" >
-            <div class="w-[var(--container-small)] m-auto flex justify-between gap-x-8">
-                <div class="w-1/2">
-                    <h2 class="w-full text-xl text-left py-4">Talent</h2>
-                    <hr>
-                    <div class="flex justify-between py-2 pr-4">
-                        <div class="w-[50%]">Art by:</div>
-                        <div class="w-full text-xs">
-                            @foreach ($comic['artists'] as $artist)
-                                <a class = "text-[color:var(--clr-primary)]"href="#">
-                                    {{$artist}}
-                                </a>
-                            @endforeach
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="flex justify-between py-2 pr-4">
-                        <div class="w-[50%]">Written by:</div>
-                        <div class="w-full text-xs">
-                            @foreach ($comic['writers'] as $writer)
-                                <a class = "text-[color:var(--clr-primary)]"href="#">
-                                    {{$writer}}
-                                </a>
-                            @endforeach
-                        </div>
-                        <br>
-                    </div>
-                </div>
-                <div class="w-1/2">
-                    <h2 class="w-full text-xl text-left py-4">Specs</h2>
-                    <hr>
-                    <div class="flex py-2 pr-4">
-                        <div class="w-[50%]">Series:</div>
-                        <div class="w-full text-xs">
-                            <a class = "uppercase text-[color:var(--clr-primary)]" href="#">
-                                {{$comic['series']}}
-                            </a>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="flex py-2 pr-4">
-                        <div class="w-[50%]">U.S. Price:</div>
-                        <div class="w-full text-xs">
-                            {{$comic['price']}}
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="flex py-2 pr-4">
-                        <div class="w-[50%]">On Sale Date:</div>
-                        <div class="w-full text-xs">
-                            {{date( "M d Y", strtotime($comic['sale_date']))}}
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
     @include('partials.home_merchandise')
 @endsection
