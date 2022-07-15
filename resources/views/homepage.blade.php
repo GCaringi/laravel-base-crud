@@ -21,10 +21,8 @@
                 </div>
                 @endforeach
             </div>
-            <div class="text-center ">
-                <button class="text-white uppercase font-semibold bg-[color:var(--clr-primary)] px-12 py-2">
-                    <a href="{{route('comics.create')}}">Add Comic</a>
-                </button>
+            <div class="text-center pb-4">
+                <a href="{{route('comics.create')}}" class="text-white uppercase font-semibold bg-[color:var(--clr-primary)] px-12 py-3">Add Comic</a>
             </div>
         </div>
     </div>
