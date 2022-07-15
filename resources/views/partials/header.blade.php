@@ -7,7 +7,9 @@
     </div>
     <div class="o-footerMiddle font-semibold">
         <div class="w-[var(--container)] m-auto flex justify-between items-center py-2">
-            <img src="{{asset('img/dc-logo.png')}}" alt="">
+            <a href="{{route('homepage')}}">
+                <img src="{{asset('img/dc-logo.png')}}" alt="">
+            </a>
             <nav>
                 <ul class="flex gap-x-3 uppercase">
                     <li>
