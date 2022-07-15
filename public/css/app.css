@@ -41,3 +41,12 @@ body {
 .o-topFooter {
   background-image: url(../img/footer-bg.jpg);
 }
+
+.a-cardIcon {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.a-cardImage:hover .a-cardIcon {
+  opacity: 1;
+}
