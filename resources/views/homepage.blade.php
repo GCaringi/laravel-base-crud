@@ -15,7 +15,7 @@
                 @foreach ($comics as $comic)
                 <div class= "text-center uppercase">
                     <a href="{{ route('comics.show', $comic->id) }}">
-                        <img src="{{$comic['thumb']}}" alt="">
+                        <img src="{{$comic['thumb']}}" alt="Comic Image">
                         <h4 class="text-white font-bold">{{$comic['series']}}</h4> 
                     </a>
                 </div>
