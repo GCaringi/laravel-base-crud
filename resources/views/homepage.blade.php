@@ -18,7 +18,11 @@
                         <div class = "a-cardImage relative text-white">
                             <img src="{{$comic['thumb']}}" alt="Comic Image">
                             <a href="{{route('comics.edit', $comic->id)}}" class = "a-cardIcon absolute top-0 left-0 p-3 m-1 bg-orange-500 rounded-lg"><i class="fa-solid fa-pencil"></i></a>
-                            <a href="" class = "a-cardIcon absolute bottom-0 right-0 p-3 m-1 bg-red-700 rounded-lg"><i class="fa-solid fa-trash"></i></a>
+                            <form action="{{route('comics.destroy', $comic->id)}}" method="POST">
+                                @csrf
+                                @method('DELETE')
+                                <button class = "a-cardIcon absolute bottom-0 right-0 p-3 m-1 bg-red-700 rounded-lg"><i class="fa-solid fa-trash"></i></button>
+                            </form>
                         </div>
                         <h4 class="text-white font-bold pt-2">{{$comic['series']}}</h4> 
                     </a>

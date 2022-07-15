@@ -6,7 +6,6 @@
 
 @section('main-content')
 
-   @dump($comic);
     <div class= "bg-[color:var(--clr-secondary)]">
         <div class= "w-[var(--container)] m-auto py-4">
             <form action="{{route('comics.update', $comic->id)}}" method="POST"
